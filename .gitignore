@@ -1,0 +1,6 @@
+.vagrant/
+robots.txt
+replace.php
+.DS_Store
+.idea/
+wp-config.php
