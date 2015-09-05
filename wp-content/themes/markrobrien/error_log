@@ -1,0 +1,2 @@
+[24-Nov-2013 04:19:19] PHP Fatal error:  Call to undefined function  add_action() in /home1/markob83/public_html/markrobrien.info/wp-content/themes/markrobrien/functions.php on line 57
+[20-May-2014 16:20:00 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home1/markob83/public_html/markrobrien.info/wp-content/themes/markrobrien/index.php on line 1

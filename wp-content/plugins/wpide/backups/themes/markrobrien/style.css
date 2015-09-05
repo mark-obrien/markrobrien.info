@@ -1,0 +1,493 @@
+/*
+Theme Name: MROINFO
+Author: Mark OBrien
+Author URI: http://www.markrobrien.info
+Description: A custom theme for markrobrien.info.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mroinfo
+*/
+
+
+
+
+/*----------------------------------------------------------------------------------------*/
+
+/*--GENERAL STYLES--*/
+
+/*----------------------------------------------------------------------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:500);
+
+@font-face {
+  font-family: 'franchiseregular';
+  src: url('assets/fonts/franchise-bold-webfont.eot');
+  src: url('assets/fonts/franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/franchise-bold-webfont.woff') format('woff'),
+    url('assets/fonts/franchise-bold-webfont.ttf') format('truetype'),
+    url('assets/fonts/franchise-bold-webfont.svg#franchiseregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'corbertregular';
+  src: url('assets/fonts/corbert-regular-webfont.eot');
+  src: url('assets/fonts/corbert-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/corbert-regular-webfont.woff') format('woff'),
+    url('assets/fonts/corbert-regular-webfont.ttf') format('truetype'),
+    url('assets/fonts/corbert-regular-webfont.svg#corbertregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+html{
+  overflow-x:hidden;
+  height:100%;
+}
+
+body {
+  font: 14px/21px "Cabin", Helvetica, Arial, sans-serif;
+  background: #303948;
+  color:#354757;
+  -webkit-font-smoothing: antialiased;
+  height:100%;
+  font-smoothing: antialiased;
+}
+
+main {
+  height:100%;
+}
+
+p {
+  margin-bottom: 21px;
+}
+h1 {
+  font: 36px/1.5em 'Roboto', sans-serif;
+}
+
+h2,
+h3 {
+  font: 21px/1.5em 'Roboto', sans-serif;
+}
+
+h4 {
+  font: 16px/1.5em 'Roboto', sans-serif;
+}
+
+h5 {
+  font: 14px/1.5em 'Roboto', sans-serif;
+}
+
+h6 {
+  font: 12px/1.5em 'Roboto', sans-serif;
+}
+
+a, a:hover {
+  text-decoration:none;
+}
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+.inner-grey {
+  background: #EEEEF0;
+  padding: 48px;   
+  margin: 36px 0;
+}
+
+.home section {
+  margin: 72px 0;
+  min-height:100%;
+}
+
+.home section header {
+  padding: 72px 0;
+  text-align:center;
+  background: #EEEEF0;
+  margin: 72px 0;
+}
+
+.home section header h1 {
+  font: 90px 'franchiseregular';
+  text-shadow: 3px 0px 0px rgba(150, 150, 150, .25);
+}
+
+
+
+.progress {
+  overflow: hidden;
+  height: 18px;
+  margin-bottom: 18px;
+  background-color: #f7f7f7;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.progress-bar {
+  width: 0%;
+  height: 18px;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #1ABC9C;
+}
+
+#overlay {
+  height: 100%;
+  opacity: 0.4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  width: 100%;
+  z-index: 9;
+}
+
+	
+/*----------------------------------------------------------------------------------------*/
+
+/*--HEADER--*/
+
+/*----------------------------------------------------------------------------------------*/
+
+
+.home-header {
+	
+}
+
+.logo {
+  text-shadow: 3px 0px 0px rgba(150, 150, 150, .25);
+  color:#EEEEF0;
+}
+
+.logo h1{
+  font: 150px 'franchiseregular';
+  text-align:center;
+  width:100%;
+  position:absolute;
+  left: 0;
+  top:30%;
+  animation-delay:1s;
+  -webkit-animation-delay:1s;
+}
+
+.logo h2{
+  font: 50px 'franchiseregular';
+  text-align:center;
+  width:100%;
+  position:absolute;
+  left: 0;
+  top:45%;
+  animation-delay:3s;
+  -webkit-animation-delay:3s;
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+
+/*--NAV--*/
+
+/*----------------------------------------------------------------------------------------*/
+
+
+.navbar-default .navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  color:#EEEEF0;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color:#EEEEF0;
+}
+
+.navbar-toggle {
+  position:relative;
+}
+
+.navbar-default {
+  background: #3F4B5B;
+  border-color: #2E3744;
+}
+
+.mobile {
+  display:none;
+  z-index:99;
+  position:fixed;
+  top:51px;
+  left:0px;
+  background:whitesmoke;
+  border-top: 1px solid #ccc;
+  width:300px;
+  list-style:none;
+}
+
+.mobile li {
+  text-align:center;
+}
+
+.mobile li a{
+  text-align:center;
+}
+
+.dropdown ul, .dropdown ul > ul{
+  display:none;
+}
+
+.splash {
+  height: 100%;
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+
+/*--ABOUT--*/
+
+/*----------------------------------------------------------------------------------------*/
+
+
+#about {
+
+ }
+
+#about .inner-grey {
+  background: #EEEEF0;
+  padding: 48px;   
+  margin: 36px 0;
+}
+ 
+
+ /*----------------------------------------------------------------------------------------*/
+
+/*--GIGS--*/
+
+/*----------------------------------------------------------------------------------------*/
+
+
+#gigs {
+  
+}
+
+#gigs .inner{
+  margin-bottom:0;
+}
+
+#gigs .row:first-of-type{
+  margin-bottom:36px;
+}
+
+.gigs-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.gigs-single img {
+  position: relative;
+  vertical-align: middle;
+  top: 0; 
+  transition: all 0.2s ease-in-out;
+}
+
+.gigs-single img:hover {
+  top: -39px;
+}
+
+.gigs-single:hover h3, .gigs-single:active h3 {
+  bottom: 0;
+}
+
+.gigs-single h3  {
+  position: absolute;
+  bottom: -46px;
+  left: 0;
+  margin: 0;
+  padding: 12px 0;
+  width: 100%;
+  background: #1879bf;
+  color: #EEEEF0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.6em;
+  line-height: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.gigs-single h3:hover, .gigs-single h3:active  {
+  bottom: 0;
+}
+
+/* PLANE ANIMATION */
+
+@-webkit-keyframes plane {
+  0% {left:90%;}
+  100% { left: -100%; }
+}
+
+@-moz-keyframes plane {
+  0% {left:90%;}
+  100% { left: -100%; }
+}
+
+@-ms-keyframes plane {
+  0% {left:90%;}
+  100% { left: -100%; }
+}
+
+@-o-keyframes plane {
+  0% {left:90%;}
+  100% { left: -100%; }
+}
+
+@keyframes plane {
+  0% {left:90%;}
+  100% { left: -100%; }
+}  
+
+#image-plane{
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width:500px;
+  
+  -webkit-animation-name: plane;
+  -moz-animation-name: plane;
+  -ms-animation-name: plane;
+  -o-animation-name: plane;
+  animation-name: plane;
+  
+  -webkit-animation-duration: 9s;
+  -moz-animation-duration: 9s;
+  -ms-animation-duration: 9s;
+  -o-animation-duration: 9s;
+  animation-duration: 9s;
+  
+  /*-webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;*/
+}
+
+/* BANNER ANIMATION */
+
+@-webkit-keyframes banner {
+  0% {left:170%;}
+  100% { left: 0; }
+}
+
+@-moz-keyframes banner {
+  0% {left:170%;}
+  100% { left: 0; }
+}
+
+@-ms-keyframes banner {
+  0% {left:170%;}
+  100% { left: 0; }
+}
+
+@-o-keyframes banner {
+  0% {left:170%;}
+  100% { left: 0; }
+}
+
+@keyframes banner {
+  0% {left:170%;}
+  100% { left: 0; }
+}  
+
+.image-banner{
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  
+  -webkit-animation-name: banner;
+  -moz-animation-name: banner;
+  -ms-animation-name: banner;
+  -o-animation-name: banner;
+  animation-name: banner;
+  
+  -webkit-animation-duration: 9s;
+  -moz-animation-duration: 9s;
+  -ms-animation-duration: 9s;
+  -o-animation-duration: 9s;
+  animation-duration: 9s;
+  
+  
+  /*-webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;*/
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+/*--TESTIMONIALS--*/
+
+/*----------------------------------------------------------------------------------------*/
+
+
+#testimonials {
+  background: #1ABC9C;
+  min-height:0;
+  padding: 72px 0;
+  margin: 72px 0;
+}
+
+#testimonials img{
+  max-width: 125px;
+  min-height: 130px;
+}
+
+#testimonials p {
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 0px;
+  color: #EEEEF0;
+}
+
+#testimonials .carousel-control.left, #testimonials .carousel-control.right {
+  background: transparent;
+  background-image:none;
+}
+
+#testimonials .carousel-control .glyphicon-chevron-left {
+  left: 0;
+}
+
+#testimonials .carousel-control .glyphicon-chevron-right {
+  right: 0;
+}
+
+
+
+/*----------------------------------------------------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------------------------*/
+
+/*--RESPONSIVE STUFF--*/
+
+/*----------------------------------------------------------------------------------------*/
+
+@media all and (max-width: 768px) {
+
+  .logo h1{
+    font: 90px 'franchiseregular';
+    text-align:center;
+    top:30%;
+  }
+
+  .logo h2{
+    font: 50px 'franchiseregular';
+    top:50%;
+  }
+	
+}
